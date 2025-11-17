@@ -1,6 +1,6 @@
 .menu{
     display: flex;
-    flex: content;
+    flex-direction: row;
     width:max-content;
     justify-content: space-around;
     align-items: center;
@@ -16,3 +16,4 @@
     text-decoration: none;
     color: white;
 }
+    flex-direction: row;
