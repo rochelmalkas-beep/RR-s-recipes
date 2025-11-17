@@ -3,6 +3,7 @@ body {
     font-size: 100%;
 }
 
+ HEAD
 nav {
     background-color: rgb(184, 255, 168);
     display: flex;
@@ -60,3 +61,62 @@ nav p.menu a:hover {
     }   
    
 }
+=======
+nav {
+    background-color: rgb(184, 255, 168);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    width: auto;
+    padding: 10px;
+
+}
+
+nav p.menu {
+    margin: 0;
+}
+
+nav p.menu a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 200;
+    padding: 10%;
+    border-radius: 6px;
+    font-size: 50px;
+    white-space: nowrap;
+}
+
+nav p.menu a:hover {
+    background-color: aquamarine;
+    opacity: 50%;
+
+}
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: red;
+        font-size: 14px;
+    }
+
+    nav {
+        flex-direction: column;
+        justify-content:space-evenly;
+        align-items: flex-start;
+        width:100%;
+    height:100vh;
+
+
+    }
+
+    nav p.menu a {
+        display:block;
+        padding: 10px 15px;
+        font-size: 50px;
+    }
+    nav p.menu a:hover{
+    width:100vh;
+    }   
+   
+}
+
