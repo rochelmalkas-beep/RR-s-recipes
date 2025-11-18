@@ -1,0 +1,54 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f1f1;
+            padding: 30px;
+        }
+
+        .subscribe-box {
+            max-width: 450px;
+            margin: auto;
+            padding: 25px;
+            background:#C88040;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        input, select {
+            width: 90%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #333333;
+            border-radius: 6px;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        button {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color:white;
+            opacity: 0.85;
+            color:black;
+        }
+
+        .primary-btn { background: #333333; color: white; }
+        .secondary-btn { background: #333333; color: white; }
+        .reset-btn { background: #333333;color:white; }
