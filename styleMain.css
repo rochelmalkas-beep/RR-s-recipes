@@ -2,18 +2,41 @@
     
     display: flex;
     flex-direction: row;
-    width:max-content;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    background-color:rgb(210, 11, 11);
-    padding:15px;
-    margin: 7px;
+    background-color:rgb(200, 128, 64);
+    padding: 0 50px;
     border-radius:10px;
-    font-size: 50px;
+    font-size:30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 60px;
+    margin: 2% auto;
 }
+
 .menu a{
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
+    display: flex;    
+    height: 100%;      
+    align-items: center;   
+    padding: 10px 15px;            
+    border-radius: 10px;
 }
-    flex-direction: row;
+.menu a:hover{
+    color: rgb(51, 51, 51);
+    background-color: rgb(234, 224, 196);
+    border-radius: 5px;
+    font-size: larger;
+}
+.menu a:active{
+    background-color: rgb(234, 224, 196);
+    font-weight: bold;
+}
+.logo #logoPic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100px;
+    height:100px;
+    margin: 20px 0;
+}
