@@ -1,5 +1,3 @@
-
-
 .menu {
     display: flex;
     flex-direction: row;
@@ -12,8 +10,8 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 60px;
     padding: 2% auto;
-   
-    
+
+
 }
 
 .menu a {
@@ -65,11 +63,13 @@ body {
     margin: 40px 0;
     min-height: 60vh;
 }
-#headFooter{
+
+#headFooter {
     margin-bottom: 10px;
 }
+
 footer {
-    max-height:250px;
+    max-height: 250px;
     background-color: #333;
     color: white;
     padding: 20px;
@@ -79,7 +79,8 @@ footer {
     flex-wrap: wrap;
     flex-direction: column;
 }
-#listFooter{
+
+#listFooter {
     list-style: none;
     display: flex;
     gap: 30px;
@@ -93,6 +94,7 @@ footer {
     color: white;
     font-size: 18px;
 }
+
 #listFooter a:hover {
     text-decoration: underline;
     color: #C88040;
