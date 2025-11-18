@@ -10,23 +10,40 @@
 
 <body>
     <header>
-        <div class="logo">
-            <img id="logoPic" src="img/logo.jpg" alt="logo" width="80px" height="80px">
-        </div>
-        <div>
-            <nav class="menu">
+        <a href="mainProject.html">
+            <img id="logoPic" src="img/logo.jpg" alt="logo">
+        </a>
+        <nav class="menu">
 
-                <a href="#">Home</a>
-                <a href="#">About me</a>
-                <a href="#">portfolio</a>
-                <a href="#">contact</a>
+            <a href="mainProject.html">HOME</a>
+            <a href="#">RECIPES</a>
+            <a href="#">CONVERSIONS</a>
+            <a href="#contact">CONTACT US</a>
 
-            </nav>
-        </div>
+        </nav>
     </header>
+    <main>
+        <section class="main-section">
+            <h1>Welcome to RR's Recipes!</h1>
+            <p>Your go-to destination for delicious and easy-to-make recipes. Whether you're a beginner or a seasoned
+                cook, we have something for everyone. Explore our collection of mouth-watering dishes and start cooking
+                today!</p>
+            <img src="img/mainDish.jpg" alt="Delicious Dish" width="400px" height="300px">
+        </section>
+    </main>
+    <iframe id="contact" src="subscribe.html" loading="lazy">
+    </iframe>
+    <footer class="subscribe-section">
+        <ol id="listFooter">
+            <li><a href="mainProject.html">HOME</a></li>
+            <li><a href="#">RECIPES</a></li>
+            <li><a href="#">CONVERSIONS</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+        </ol>
+        <h2 id="headFooter">Subscribe to our newsletter</h2>
+        <p>Get the latest recipes and updates directly to your inbox.</p>
 
-    <footer>
-        <iframe id="iframe" src="subscribe.html" loading="lazy">
+        <iframe src="subscribe.html" loading="lazy">
         </iframe>
     </footer>
 

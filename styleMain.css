@@ -1,5 +1,6 @@
-.menu {
 
+
+.menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -10,7 +11,9 @@
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 60px;
-    margin: 2% auto;
+    padding: 2% auto;
+   
+    
 }
 
 .menu a {
@@ -21,6 +24,8 @@
     align-items: center;
     padding: 10px 15px;
     border-radius: 10px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s, font-size 0.3s;
 }
 
 .menu a:hover {
@@ -35,7 +40,7 @@
     font-weight: bold;
 }
 
-.logo #logoPic {
+#logoPic {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,10 +49,59 @@
     margin: 20px 0;
 }
 
-#iframe {
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 40px 0;
+    min-height: 60vh;
+}
+#headFooter{
+    margin-bottom: 10px;
+}
+footer {
+    max-height:250px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+#listFooter{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 20px 0;
+    flex-direction: column;
+}
+#listFooter a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+footer iframe {
     width: 100%;
-    height: 320;
-    border: 0;
+    height: 420px;
     max-width: 400px;
+    border: 0;
     border-radius: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: bisque;
 }
