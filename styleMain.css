@@ -87,10 +87,15 @@ footer {
     margin: 20px 0;
     flex-direction: column;
 }
+
 #listFooter a {
     text-decoration: none;
     color: white;
     font-size: 18px;
+}
+#listFooter a:hover {
+    text-decoration: underline;
+    color: #C88040;
 }
 
 footer iframe {
