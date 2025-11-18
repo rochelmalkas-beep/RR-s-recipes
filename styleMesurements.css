@@ -1,0 +1,156 @@
+    html,
+    body {
+        height: 100%;
+    }
+
+    body {
+        margin: 0;
+        font-family: "Segoe UI", Roboto, Arial, sans-serif;
+        background: white;
+        color: #222;
+        line-height: 1.5;
+        display: flex;
+        justify-content: center;
+        padding: 24px;
+    }
+
+    #container {
+        width: 100%;
+
+    }
+
+    #container header {
+        text-align: center;
+        margin-bottom: 18px;
+        color: white;
+        background-color: #C88040;
+    }
+
+    #card-container {
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+        box-shadow: #222 0px 6px 18px rgba(20, 20, 30, 0.06);
+    }
+
+    #card-container {
+        display: grid;
+        gap: 18px;
+        grid-template-columns: 1fr;
+    }
+
+    @media(min-width:880px) {
+        #card-container {
+            grid-template-columns: 1fr 340px;
+        }
+    }
+
+    #card,
+    #card2 {
+        background: #F5F5F5;
+        border-radius: 10px;
+        box-shadow: 0 6px 18px rgba(20, 20, 30, 0.06);
+        padding: 20px;
+    }
+
+    h2 {
+        margin-top: 0;
+        color: #C88040;
+        font-size: 1.15rem;
+    }
+
+    h3 {
+        margin: 12px 0 6px;
+    }
+
+    p.lead {
+        color: #666666;
+        margin-top: 0;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 8px 0 12px;
+    }
+
+    table th,
+    table td {
+        border: 1px solid #e6e6e6;
+        padding: 8px;
+        text-align: left;
+    }
+
+    table th {
+        background: #fafafa;
+    }
+
+    .abbr-grid {
+        display: grid;
+        gap: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+
+    }
+    .abbr-grid div {
+        background: #EBDCCA;
+        padding: 10px;
+        border-radius: 6px;
+        text-align: center;
+    }
+
+    .small {
+        font-size: 0.92rem;
+        color: #999999;
+    }
+
+    .top-link {
+        display: inline-block;
+        margin-top: 10px;
+        color: #C88040;
+        text-decoration: none;
+    }
+
+    .muted-note {
+        font-size: 0.95rem;
+        color: #999999;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    iframe {
+        border: none;
+        overflow: hidden;
+    }
