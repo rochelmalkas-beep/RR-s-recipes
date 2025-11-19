@@ -1,4 +1,4 @@
-.menu {
+/* .menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -22,7 +22,6 @@
     align-items: center;
     padding: 10px 15px;
     border-radius: 10px;
-    padding: 10px 15px;
     transition: background-color 0.3s, color 0.3s, font-size 0.3s;
 }
 
@@ -52,7 +51,64 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+
+html, body {
+    margin: 2px;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
 }
+
+.logo-section {
+    text-align:left;
+    padding: 10px 10px;
+    background-color: bisque;
+
+}
+
+#logoPic {
+    width: 120px;
+    height: 120px;
+    
+}
+
+/* זה החלק הקריטי – sticky עובד עכשיו! */
+.menu {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(200, 128, 64);
+    padding: 0 50px;
+    height: 70px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 20px;
+}
+
+/* שאר הסגנונות של הקישורים – נשארים אותו דבר */
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+.menu a:hover {
+    background-color: rgb(234, 224, 196);
+    color: #333;
+    font-size: larger;
+}
+
+
+
 
 
 #contact {
