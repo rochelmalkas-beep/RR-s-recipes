@@ -1,7 +1,4 @@
     
-    body {
-        height: 100%;
-    }
 
     body {
         margin: 0;
@@ -11,12 +8,12 @@
         line-height: 1.5;
         display: flex;
         justify-content: center;
-        padding: 24px;
+        padding: 2px;
     }
 
     #container {
-        width: 100%;
-
+        width: 96%;
+        justify-content: center;
     }
 
     #container header {
@@ -30,7 +27,7 @@
         display: flex;
         justify-content: center;
         gap: 18px;
-        box-shadow: #222 0px 6px 18px rgba(20, 20, 30, 0.06);
+        box-shadow: #222 0px 6px 3px rgba(20, 20, 30, 0.06);
     }
 
     #card-container {
@@ -49,7 +46,7 @@
     #card2 {
         background: #F5F5F5;
         border-radius: 10px;
-        box-shadow: 0 6px 18px rgba(20, 20, 30, 0.06);
+        box-shadow: 0 6px 3px rgba(20, 20, 30, 0.06);
         padding: 20px;
     }
 

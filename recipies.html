@@ -6,9 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="styleRecipies.css" rel="stylesheet">
+    <link href="styleMain.css" rel="stylesheet">
+
 </head>
 
 <body>
+    <div class="logo-section">
+        <a href="mainProject.html">
+            <img id="logoPic" src="img/logo.png" alt="logo">
+        </a>
+    </div>
+
+    <nav class="menu">
+        <a href="mainProject.html">HOME</a>
+        <a href="recipies.html" target="_blank" rel="noopener">RECIPES</a>
+        <a href="Measurements.html" target="_blank" rel="noopener">CONVERSIONS</a>
+        <a href="#footer">CONTACT US</a>
+    </nav>
+
     <div class="recipiesContainer">
         <a class="recipeCard" href="#recipe1">
             <img class="imgRecipeCard" src="img/spaghetti.jpg" alt="Spaghetti Carbonara">
@@ -167,7 +182,8 @@
                     <li>Add canned tomatoes, vegetable broth, and sugar. Bring to a boil, then reduce heat and simmer
                         for
                         20 minutes.</li>
-                    <li>Use an immersion blender to puree the soup until smooth. Season with salt and pepper to taste.</li>
+                    <li>Use an immersion blender to puree the soup until smooth. Season with salt and pepper to taste.
+                    </li>
                     <li>Serve hot, garnished with fresh basil leaves.</li>
                 </ul>
             </div>
@@ -450,6 +466,20 @@
         </div>
 
     </div>
+    <footer id="footer" class="subscribe-section">
+        <ol id="listFooter">
+            <li><a href="mainProject.html">HOME</a></li>
+            <li><a href="recipies.html" target="_blank" rel="noopener">RECIPES</a></li>
+            <li><a href="Measurements.html" target="_blank" rel="noopener">CONVERSIONS</a></li>
+            <li><a href="#footer">CONTACT US</a></li>
+        </ol>
+        <h2 id="headFooter">Subscribe to our newsletter</h2>
+        <p>Get the latest recipes and updates directly to your inbox.</p>
+        <div class="contact">
+            <iframe src="subscribe.html" loading="lazy">
+            </iframe>
+        </div>
+    </footer>
 
 
 </body>
