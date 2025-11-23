@@ -115,3 +115,96 @@
 body{
     background-color: bisque;
 }
+
+/*@media only screen and (max-width: 600px) {
+
+    .recipiesContainer {
+        grid-template-columns: 1fr;   
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .recipeCard {
+        padding: 10px;
+        margin: 5px 0;
+    }
+
+    .recipeCard h2 {
+        font-size: 1.3rem;
+    }
+
+    .recipeCard p {
+        font-size: 0.95rem;
+    }
+
+    .recipeFull {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .recipeFull h1 {
+        font-size: 1.6rem;
+    }
+
+    .recipeFull h2 {
+        font-size: 1.3rem;
+    }
+
+    .recipeFull p {
+        font-size: 1.1rem;
+    }
+
+    .recipeFull img {
+        width: 100%;
+    }
+    
+}*/
+
+@media only screen and (max-width: 600px) {
+
+    /* --- מכולת המתכונים (recipiesContainer) --- */
+    .recipiesContainer {
+        /* שינוי עיקרי: הצגה של עמודה אחת במקום 3 */
+        grid-template-columns: 1fr; 
+        /* הקטנת הפדינג בצדדים */
+        padding: 10px; 
+        /* הקטנת הרווחים בין הכרטיסים */
+        gap: 15px;
+    }
+
+    /* שיפור מראה כרטיס המתכון במסך קטן */
+    .recipeCard {
+        margin: 5px 5px; /* הפחתת מרווחים חיצוניים מיותרים */
+        padding: 15px; /* הגדלת ריפוד פנימי קל */
+    }
+
+    /* --- חלון קופץ של מתכון מלא (recipeFull) --- */
+    .recipeFull {
+        /* שינוי עיקרי: הגדלת הרוחב ל-95% כדי למלא כמעט את כל המסך */
+        width: 80%; 
+        /* הקטנת הריפוד הפנימי */
+        padding: 10px; 
+    }
+    
+    /* התאמת גודל הגופן והתמונות בחלון הקופץ */
+    .recipeFull h1 {
+        font-size: 1.5rem; /* הקטנת כותרת ראשית */
+    }
+
+    .recipeFull h2 {
+        font-size: 1.2rem; /* הקטנת כותרת משנית */
+    }
+
+    .recipeFull p {
+        font-size: 1rem; /* הקטנת טקסט רגיל */
+    }
+    
+    .recipeFull img {
+        width: 100%; /* התמונה תופסת את כל רוחב החלון הקופץ */
+    }
+    
+    /* כפתור סגירה */
+    .closeBtn {
+        font-size: 20px; /* התאמת גודל כפתור הסגירה */
+    }
+}
