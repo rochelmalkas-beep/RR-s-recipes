@@ -1,58 +1,3 @@
-/* .menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(200, 128, 64);
-    padding: 0 50px;
-    border-radius: 10px;
-    font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    height: 60px;
-    padding: 2% auto;
-
-
-}
-
-.menu a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    display: flex;
-    height: 100%;
-    align-items: center;
-    padding: 10px 15px;
-    border-radius: 10px;
-    transition: background-color 0.3s, color 0.3s, font-size 0.3s;
-}
-
-.menu a:hover {
-    color: rgb(51, 51, 51);
-    background-color: rgb(234, 224, 196);
-    border-radius: 5px;
-    font-size: larger;
-}
-
-.menu a:active {
-    background-color: rgb(234, 224, 196);
-    font-weight: bold;
-}
-
-#logoPic {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    margin: 20px 0;
-}
-
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-} */
-
 html,
 body {
     margin: 2px;
@@ -76,7 +21,6 @@ body {
 
 }
 
-/* זה החלק הקריטי – sticky עובד עכשיו! */
 .menu {
     position: sticky;
     top: 0;
@@ -94,7 +38,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* שאר הסגנונות של הקישורים – נשארים אותו דבר */
 .menu a {
     text-decoration: none;
     color: white;
@@ -108,10 +51,6 @@ body {
     color: #333;
     font-size: larger;
 }
-
-
-
-
 
 #contact {
     display: flex;
@@ -158,20 +97,17 @@ footer {
     color: #C88040;
 }
 
-/* --- A. Wrapper Styles: Sets the fixed size and hides the scrollbar --- */
-.contact{
-    /* Adjust 410px only if content is clipped/too tall */
-    height: 410px; 
+.contact {
+    height: 410px;
     max-width: 450px;
     margin: 0 auto;
-    overflow: hidden; /* This hides the scrollbar */
+    overflow: hidden;
     border-radius: 10px;
 }
 
-/* --- B. Iframe Styles: Stretches the iframe to fit the wrapper --- */
 .contact iframe {
     width: 100%;
-    height: 100%; 
+    height: 100%;
     border: none;
 }
 
@@ -179,6 +115,7 @@ html {
     scroll-behavior: smooth;
     background-color: bisque;
 }
+
 .welcome {
     text-align: center;
     margin: 20px;
@@ -246,33 +183,72 @@ html {
     inset: 0;
     background: linear-gradient(to right,
             transparent 70%,
-            rgba(255, 228, 196, 1.0) 100%);}
-
-    #image-container1.fade-out-effect::after {
-        content: '';
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(to right,
-                transparent 70%,
-                rgba(255, 228, 196, 1.0) 100%);
-    }
-
-    #image-container2 {
-        position: relative;
-        overflow: hidden;
-    }
-    #image-container2 img {
-    position: relative; 
-    z-index: 1; 
+            rgba(255, 228, 196, 1.0) 100%);
 }
 
-    #image-container2.fade-out-effect::after {
-        content: '';
-        position: absolute;
-        inset: 0;
-        z-index: 2;
-        background: linear-gradient(to left,
-                transparent 70%,
-                rgba(255, 228, 196, 1.0) 100%);
+#image-container1.fade-out-effect::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right,
+            transparent 70%,
+            rgba(255, 228, 196, 1.0) 100%);
+}
+
+#image-container2 {
+    position: relative;
+    overflow: hidden;
+}
+
+#image-container2 img {
+    position: relative;
+    z-index: 1;
+}
+
+#image-container2.fade-out-effect::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: linear-gradient(to left,
+            transparent 70%,
+            rgba(255, 228, 196, 1.0) 100%);
+}
+@media only screen and (max-width: 1024px) {
+    .menu { padding: 0 30px; font-size: 26px; }
+    #logoPic { width: 100px; height: 100px; }
+}
+
+@media only screen and (max-width: 900px) {
+    .about, #second {
+        flex-direction: column !important;
+        text-align: center;
     }
-   
+    .image-container1, .image-container2 { max-width: 100%; }
+    .menu { font-size: 24px; padding: 0 20px; }
+}
+
+@media only screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        gap: 10px;
+    }
+    .menu a { padding: 8px 15px; font-size: 22px; }
+    #logoPic { width: 80px; height: 80px; }
+    .welcome { font-size: 22px; }
+    .text p { font-size: 17px; }
+}
+
+@media only screen and (max-width: 480px) {
+    .menu { font-size: 20px; }
+    .menu a { padding: 10px; }
+    #logoPic { width: 70px; height: 70px; }
+    .welcome { font-size: 20px; margin: 15px; }
+    .about { margin: 15px 10px; padding: 15px; }
+    .text p { font-size: 16px; line-height: 1.7; }
+    .contact { height: 300px; }
+    footer { padding: 15px; }
+    #listFooter a { font-size: 16px; }
+}
