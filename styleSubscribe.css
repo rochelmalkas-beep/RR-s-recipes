@@ -5,11 +5,13 @@ iframe{
         body {
             font-family: Arial, sans-serif;
             background: #333333 ;
-            padding: 30px;
+            padding:0;
+            margin: 0;
         }
 
         .subscribe-box {
             max-width: 450px;
+            max-height: 400px;
             margin: auto;
             padding: 25px;
             background:#C88040;
