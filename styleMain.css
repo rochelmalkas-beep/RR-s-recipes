@@ -1,5 +1,4 @@
-.menu {
-
+/* .menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -10,7 +9,9 @@
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 60px;
-    margin: 2% auto;
+    padding: 2% auto;
+
+
 }
 
 .menu a {
@@ -21,6 +22,7 @@
     align-items: center;
     padding: 10px 15px;
     border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s, font-size 0.3s;
 }
 
 .menu a:hover {
@@ -35,7 +37,7 @@
     font-weight: bold;
 }
 
-.logo #logoPic {
+#logoPic {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +45,11 @@
     height: 100px;
     margin: 20px 0;
 }
-   iframe {
-        border: none;
-        overflow: hidden;
-    }
+
+#iframe {
+    width: 100%;
+    height: 320;
+    border: 0;
+    max-width: 400px;
+    border-radius: 10px;
+}
