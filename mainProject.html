@@ -25,28 +25,57 @@
         </nav>
     </header> -->
     <div class="logo-section">
-    <a href="mainProject.html">
-        <img id="logoPic" src="img/logo.png" alt="logo">
-    </a>
-</div>
+        <a href="mainProject.html">
+            <img id="logoPic" src="img/logo.png" alt="logo">
+        </a>
+    </div>
 
-<nav class="menu">
-    <a href="mainProject.html">HOME</a>
-    <a href="#">RECIPES</a>
-    <a href="Measurements.html" target="_blank">CONVERSIONS</a>
-    <a href="#contact">CONTACT US</a>
-</nav>
+    <nav class="menu">
+        <a href="mainProject.html">HOME</a>
+        <a href="#">RECIPES</a>
+        <a href="Measurements.html" target="_blank">CONVERSIONS</a>
+        <a href="#contact">CONTACT US</a>
+    </nav>
     <main>
-        <section class="main-section">
-            <h1>Welcome to RR's Recipes!</h1>
+        <section class="welcome">
+            <strong>Welcome to RR's Recipes</strong>
             <p>Your go-to destination for delicious and easy-to-make recipes. Whether you're a beginner or a seasoned
                 cook, we have something for everyone. Explore our collection of mouth-watering dishes and start cooking
                 today!</p>
-            <img src="img/mainDish.jpg" alt="Delicious Dish" width="400px" height="300px">
+            <!-- <img src="img/mainDish.jpg" alt="Delicious Dish" width="400px" height="300px"> -->
         </section>
+
+        <div class="about">
+            <div id="image-container1" class="fade-out-effect">
+                <img src="img/photo_home_about.jpg" alt="About Us">
+            </div>
+            <div class="text">
+                <p>Hey, I’m Rachel!<br>This site is basically my little corner of the internet where I share the food I
+                    love. It
+                    all started growing up in a loud family kitchen. For me, cooking is creative, it’s how I unwind, and
+                    it’s
+                    the best way to bring people together. Here you’ll find my tried-and-true family recipes, new things
+                    I’m
+                    obsessed with, and the everyday stuff I actually make on repeat. Hope you find something that makes
+                    your
+                    kitchen feel like home.</p>
+            </div>
+        </div>
+        <div class="about" id="second">
+            <div id="image-container2" class="fade-out-effect">
+                <img src="img/photo_home_about2.jpg" alt="About Us 2">
+            </div>
+            <div class="text">
+                <p>What you’ll find here<br>Everything on RR’s Recipes is built around real life: big flavor, no fuss.
+                    There’s a mix of cozy classics, fast weeknight wins, and whatever I’m currently hooked on
+                    baking that actually works. Every recipe has been
+                    tested (sometimes more than once 😅) so it works whether you’re just starting out or you’ve been
+                    cooking
+                    forever. Scroll through, pick one, and make it yours. Happy cooking! 🫶</p>
+            </div>
+        </div>
+
     </main>
-    <iframe id="contact" src="subscribe.html" loading="lazy">
-    </iframe>
     <footer class="subscribe-section">
         <ol id="listFooter">
             <li><a href="mainProject.html">HOME</a></li>
@@ -56,9 +85,10 @@
         </ol>
         <h2 id="headFooter">Subscribe to our newsletter</h2>
         <p>Get the latest recipes and updates directly to your inbox.</p>
-
-        <iframe src="subscribe.html" loading="lazy">
-        </iframe>
+        <div class="contact">
+            <iframe src="subscribe.html" loading="lazy">
+            </iframe>
+        </div>
     </footer>
 
 </body>
