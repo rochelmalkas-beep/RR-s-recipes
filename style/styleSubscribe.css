@@ -1,59 +1,71 @@
-
-iframe{
-    border:none;
+iframe {
+    border: none;
 }
-        body {
-            font-family: Arial, sans-serif;
-            background: #333333 ;
-            padding:0;
-            margin: 0;
-        }
 
-        .subscribe-box {
-            max-width: 450px;
-            max-height: 400px;
-            margin: auto;
-            padding: 25px;
-            background:#C88040;
-            border-radius: 12px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.2);
-            text-align: center;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background: #333333;
+    padding: 0;
+    margin: 0;
+}
 
-        h2 {
-            margin-bottom: 15px;
-        }
+.subscribe-box {
+    max-width: 450px;
+    max-height: 400px;
+    margin: auto;
+    padding: 25px;
+    background: #C88040;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
 
-        input, select {
-            width: 90%;
-            padding: 12px;
-            margin: 8px 0;
-            border: 1px solid #333333;
-            border-radius: 6px;
-        }
+h2 {
+    margin-bottom: 15px;
+}
 
-        .btn-group {
-            display: flex;
-            justify-content: space-between;
-            gap: 10px;
-            margin-top: 15px;
-        }
+input,
+select {
+    width: 90%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #333333;
+    border-radius: 6px;
+}
 
-        button {
-            flex: 1;
-            padding: 12px;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 15px;
+}
 
-        button:hover {
-            background-color:white;
-            opacity: 0.85;
-            color:black;
-        }
+button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
-        .primary-btn { background: #333333; color: white; }
-        .secondary-btn { background: #333333; color: white; }
-        .reset-btn { background: #333333;color:white; }
+button:hover {
+    background-color: white;
+    opacity: 0.85;
+    color: black;
+}
+
+.primary-btn {
+    background: #333333;
+    color: white;
+}
+
+.secondary-btn {
+    background: #333333;
+    color: white;
+}
+
+.reset-btn {
+    background: #333333;
+    color: white;
+}
