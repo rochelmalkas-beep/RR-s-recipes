@@ -13,6 +13,18 @@
         <a href="mainProject.html">
             <img id="logoPic" src="../img/logo.png" alt="logo">
         </a>
+        <div class="search-bar-allrecipes">
+            <input type="text" name="q" placeholder="Find a recipe" />
+            <button type="submit" aria-label="Search">
+                <svg viewBox="0 0 24 24" class="icon-search">
+                    <path
+                        d="M15.5 14h-.79l-.28-.27a6.471 6.471 0 001.48-5.34C15.19 5.66 12.53 3 9.25 3S3.31 5.66 3.31 8.99 5.97 14.98 9.25 14.98c1.61 0 3.09-.59 4.23-1.56l.27.28v.79l5.01 4.99L20.49 19l-4.99-5zm-6.25 0C7.01 14 5 11.99 5 8.99S7.01 3.98 9.25 3.98 13.5 6 13.5 8.99 11.49 14 9.25 14z" />
+                </svg>
+            </button>
+        </div>
+
+    </div>
+
     </div>
 
     <nav class="menu">
@@ -58,21 +70,64 @@
                     forever. Scroll through, pick one, and make it yours. Happy cooking!</p>
             </div>
         </div>
+        <div id="trending-recipes">
+            <h1>Trending Recipes</h1>
+        </div>
+        <div class="recipes">
+            <div class="overlay" id="recipe1">
+                <div class="recipe-card"> <img class="imgRecipe" src="../img/spaghetti.jpg" alt="Spaghetti Carbonara">
+                    <h1>Spaghetti Carbonara</h1>
+                    <p>A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.<br> Simple yet
+                        delicious!</p>
+                </div>
+            </div>
+
+            <div class="overlay" id="recipe2">
+                <div class="recipe-card"> <img class="imgRecipe" src="../img/curry.jpg" alt="Chicken Curry">
+                    <h1>Chicken Curry</h1>
+                    <p>A flavorful and aromatic dish made with tender chicken pieces simmered in a rich blend of spices
+                        and coconut milk.</p>
+                </div>
+            </div>
+            <div class="overlay" id="recipe4">
+                <div class="recipe-card"> <img class="imgRecipe" src="../img/pancakes.jpg" alt="Fluffy Pancakes">
+                    <h1>Fluffy Pancakes</h1>
+                    <p>Light and airy pancakes that are perfect for a weekend breakfast.<br> Serve with maple syrup and
+                        fresh fruit!</p>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="video-container">
+            <p>Experience out food</p>
+            <video autoplay muted loop playsinline>
+  <source src="../video/Cinematic Food B Roll  - Daniel Schiffer B Roll Inspired (1).mp4" type="video/mp4">
+</video>
+        </div>
 
     </main>
-    <footer id="footer" class="subscribe-section">
+
+    <footer>
+
         <ol id="listFooter">
             <li><a href="mainProject.html">HOME</a></li>
             <li><a href="recipies.html" target="_blank" rel="noopener">RECIPES</a></li>
             <li><a href="Measurements.html" target="_blank" rel="noopener">CONVERSIONS</a></li>
             <li><a href="#contact">CONTACT US</a></li>
         </ol>
-        <h2 id="headFooter">Subscribe to our newsletter</h2>
-        <p>Get the latest recipes and updates directly to your inbox.</p>
-        <div class="contact">
-            <iframe src="subscribe.html" loading="lazy">
-            </iframe>
+
+        <div class="footer-text-column">
+            <h2 id="headFooter">Subscribe to our newsletter</h2>
+            <p>Get the latest recipes and updates directly to your inbox.</p>
         </div>
+
+        <div class="contact">
+            <iframe src="subscribe.html" scrolling="no"></iframe>
+        </div>
+
     </footer>
 
 </body>
