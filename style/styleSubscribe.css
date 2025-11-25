@@ -1,116 +1,125 @@
+iframe {
 
-iframe{
-
-    border:none;
+    border: none;
 
 }
 
-        body {
+body {
 
-            font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
 
-            background: #333333 ;
+    background: #333333;
 
-            padding:0;
+    padding: 0;
 
-            margin: 0;
-
-        }
-
-
-
-        .subscribe-box {
-
-            max-width: 450px;
-
-            max-height: 400px;
-
-            margin: 0;
-
-            padding: 25px;
-
-            background:#C88040;
-
-            border-radius: 12px;
-
-            box-shadow: 0 3px 12px rgba(0,0,0,0.2);
-
-            text-align: center;
-
-        }
+    margin: 0;
+  
+}
 
 
 
-        h2 {
+.subscribe-box {
 
-            margin-bottom: 15px;
+    max-width: 450px;
 
-        }
+    max-height: 400px;
 
+    margin: 0;
 
+    padding: 25px;
 
-        input, select {
+    background: #C88040;
 
-            width: 90%;
+    border-radius: 12px;
 
-            padding: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
 
-            margin: 8px 0;
+    text-align: center;
 
-            border: 1px solid #333333;
-
-            border-radius: 6px;
-
-        }
+}
 
 
 
-        .btn-group {
+h2 {
 
-            display: flex;
+    margin-bottom: 15px;
 
-            justify-content: space-between;
-
-            gap: 10px;
-
-            margin-top: 15px;
-
-        }
+}
 
 
 
-        button {
+input,
+select {
 
-            flex: 1;
+    width: 90%;
 
-            padding: 12px;
+    padding: 12px;
 
-            border: none;
+    margin: 8px 0;
 
-            border-radius: 6px;
+    border: 1px solid #333333;
 
-            cursor: pointer;
+    border-radius: 6px;
 
-            transition: 0.3s;
-
-        }
-
-
-
-        button:hover {
-
-            background-color:white;
-
-            opacity: 0.85;
-
-            color:black;
-
-        }
+}
 
 
 
-        .primary-btn { background: #333333; color: white; }
+.btn-group {
 
-        .secondary-btn { background: #333333; color: white; }
+    display: flex;
 
-        .reset-btn { background: #333333;color:white; }
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-top: 15px;
+
+}
+
+
+
+button {
+
+    flex: 1;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+
+button:hover {
+
+    background-color: white;
+
+    opacity: 0.85;
+
+    color: black;
+
+}
+
+
+
+.primary-btn {
+    background: #333333;
+    color: white;
+}
+
+.secondary-btn {
+    background: #333333;
+    color: white;
+}
+
+.reset-btn {
+    background: #333333;
+    color: white;
+}

@@ -20,6 +20,64 @@ body {
     height: 120px;
 
 }
+/* Put the entire search bar on the absolute right of the page */
+.search-bar-allrecipes {
+    position: absolute;
+    right: 20px;      /* distance from right edge */
+    top: 50px;        /* adjust vertically wherever you want */
+    
+    /* Styling (same as before) */
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    padding-left: 14px;
+    height: 40px;
+    width: 280px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
+.search-bar-allrecipes input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: transparent;
+    height: 100%;
+    padding-right: 45px;
+}
+
+.search-bar-allrecipes button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar-allrecipes button .icon-search {
+    width: 20px;
+    height: 20px;
+    fill: #6c6c6c;
+}
+
+.search-bar-allrecipes button:hover .icon-search {
+    fill: #333;
+}
+
+
+
+
+
+
 .menu {
     position: sticky;
     top: 0;
@@ -51,76 +109,81 @@ body {
     font-size: larger;
 }
 
-footer{
-    height:350px;
-    display:flex;
-  
+footer {
+    height: 350px;
+    display: flex;
+
     background-color: #333;
     color: white;
     padding: 20px;
-    padding-top:0;
-    margin-top:0;
+    padding-top: 0;
+    margin-top: 0;
     flex-wrap: wrap;
     align-items: flex-start;
-   
+
     justify-content: space-around;
-   
+
 }
-#listFooter{
+
+#listFooter {
     display: flex;
     flex-direction: column;
-   height:350px;
-   justify-content: space-evenly;
+    height: 350px;
+    justify-content: space-evenly;
     margin-top: 20px;
 
 
 }
-#listFooter ol{
+
+#listFooter ol {
     list-style-type: none;
     padding: 0;
 }
-#listFooter li{
-   list-style-type: none;
+
+#listFooter li {
+    list-style-type: none;
 }
-#listFooter a{
+
+#listFooter a {
     color: white;
     text-decoration: none;
     font-size: 18px;
 }
-.footer-text-column{
+
+.footer-text-column {
 
     display: flex;
     flex-direction: column;
-    max-width: 300px;   
-   text-align: center;
-   align-self:center ;
+    max-width: 320px;
+    text-align: center;
+    align-self: center;
 }
 
+
 .contact {
-    /* height: 410px;
-    max-width: 450px;
-    margin: 0 auto;
-    overflow: hidden;
-    border-radius: 10px; */
-    .contact{
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
     align-self: center;
     max-width: 450px;
     height: 100%;
-    padding:0;
-    
-}
-.contact iframe{
-    border:none;
-}
+    padding: 0;
+    margin-top: 0%;
+    overflow: ;
+
 }
 
 .contact iframe {
-    /* width: 100%;
-    height: 100%; */
     border: none;
+
+    width: 100%;
+    height: 100%;
+    border: none;
+    overflow: hidden;
 }
+
+
+
+
 
 
 
@@ -193,8 +256,9 @@ footer{
             transparent 70%,
             rgba(255, 228, 196, 1.0) 100%);
 }
-            rgba(255, 228, 196, 1.0) 100%);
-}
+
+/* rgba(255, 228, 196, 1.0) 100%);
+} */
 
 #image-container1.fade-out-effect::after {
     content: '';
@@ -225,11 +289,90 @@ footer{
             rgba(255, 228, 196, 1.0) 100%);
 }
 
-@media only screen and (max-width: 600px) {
-    body, html {
+#trending-recipes {
+    border-bottom: 2px solid #C88040;
+    font-family: Arial, sans-serif;
+}
+
+
+.recipes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 15px;
+    max-width: 1600px;
+    padding: 40px;
+    margin: 0 auto;
+
+}
+
+.recipe-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    margin: 10px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 237, 215);
+    background: rgb(255, 237, 215);
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+.recipe-card h2 {
+    font-size: 1.5rem;
+    color: #C88040;
+    margin-bottom: 10px;
+}
+
+.recipe-card p {
+    font-size: 1rem;
+    color: #333;
+    margin: 5px 0;
+    text-align: center;
+
+
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+.video-container p{
+    
+}
+.video-container video {
+    width: 50%;           /* base width for desktop */
+    max-width: 600px;     /* won’t get too big */
+    min-width: 300px;     /* won’t shrink too much on small screens */
+    height: auto;
+    border-radius: 10px;  /* optional styling */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    body,
+    html {
         margin: 0;
         padding: 0;
     }
+
     #logoPic {
         width: 80px;
         height: 80px;
@@ -242,14 +385,17 @@ footer{
         gap: 10px;
         font-size: 15px;
     }
+
     .menu a {
         font-size: 15px;
         padding: 8px 2px;
     }
-        .welcome {
+
+    .welcome {
         font-size: 20px;
         margin: 10px;
     }
+
     .about {
         flex-direction: column;
         gap: 10px;
@@ -278,28 +424,53 @@ footer{
         font-size: 16px;
         line-height: 1.6;
     }
+
     #contact {
         margin: 20px 0;
         gap: 10px;
         min-height: auto;
     }
+
     .contact {
         height: 300px;
         max-width: 100%;
     }
+
     footer {
-        flex-direction: column;
-        gap: 10px;
-        padding: 15px;
-        max-height: none;
         text-align: center;
+        display:flex;
+        background-color:#333;
+        color:white;
+        padding:20px;
+        padding-top: 0;
+        margin-top: 0;
+        /* flex-wrap:wrap; */
+        align-items:flex-start;
+        justify-content: space-around;
+ height:unset;
     }
+
     #listFooter {
         flex-direction: column;
         gap: 10px;
         margin: 10px 0;
+       height:auto;
+       clear:right;
     }
+
     #listFooter a {
         font-size: 16px;
+    }
+
+    .recipe-card {
+        padding: 12px;
+    }
+
+    .recipe-card h2 {
+        font-size: 1.25rem;
+    }
+
+    .recipe-card p {
+        font-size: 0.9rem;
     }
 }

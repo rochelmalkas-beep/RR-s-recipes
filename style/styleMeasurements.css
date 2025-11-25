@@ -1,153 +1,311 @@
+/* --- THEMING SETUP --- */
+:root {
+    --bg-main: bisque;
+    --bg-card: rgb(255, 237, 215); /* Matches homepage recipe cards */
+    --accent-color: rgb(200, 128, 64); /* Homepage orange */
+    --accent-hover: rgb(234, 224, 196);
+    --text-dark: #333;
+    --text-light: #666;
+    --text-white: #fff;
+    --font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --shadow-soft: 0 4px 15px rgba(0, 0, 0, 0.1);
+    --border-radius-main: 15px;
+}
+
+/* --- GLOBAL RESET & BODY --- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-main);
+    color: var(--text-dark);
+    font-family: var(--font-stack);
+    line-height: 1.6;
+}
+
+/* --- HEADER & NAVIGATION (MATCHING HOME PAGE) --- */
+.logo-section {
+    text-align: left;
+    padding: 10px 20px;
+    background-color: var(--bg-main);
+}
+
+#logoPic {
+    width: 120px;
+    height: auto;
+}
+
+.menu {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accent-color);
+    padding: 0 50px;
+    height: 70px;
+    font-size: 24px; /* Slightly adjusted for better fit */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--text-white);
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.menu a:hover {
+    background-color: var(--accent-hover);
+    color: var(--text-dark);
+    transform: translateY(-2px); /* Subtle lift instead of font size change for smoother UI */
+}
+
+/* --- MAIN LAYOUT CONTAINER --- */
+#container {
+    width: 94%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex: 1; /* Ensures footer stays at bottom */
+}
+
+#container header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    color: var(--text-white);
+    background-color: var(--accent-color);
+    border-radius: var(--border-radius-main);
+    box-shadow: var(--shadow-soft);
+}
+
+#container header h1 {
+    margin: 0 0 10px 0;
+}
+
+p.lead {
+    color: rgba(255,255,255,0.9);
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+/* --- CARD GRID SYSTEM --- */
+#card-container {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr; /* Default mobile view */
+    margin-bottom: 40px;
+    align-items: start;
+}
+
+/* --- CONTENT CARDS (MATCHING HOME PAGE THEME) --- */
+#card,
+#card2 {
+    background: var(--bg-card); /* Using the homepage recipe card color */
+    border-radius: var(--border-radius-main);
+    box-shadow: var(--shadow-soft);
+    padding: 30px;
+    border: 1px solid rgba(200, 128, 64, 0.2); /* Subtle border matching accent */
+}
+
+/* --- TYPOGRAPHY INSIDE CARDS --- */
+h2 {
+    margin-top: 0;
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    border-bottom: 2px solid rgba(200, 128, 64, 0.3);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin: 25px 0 15px;
+    color: var(--accent-color);
+}
+
+.small, .muted-note {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    background-color: rgba(255,255,255,0.5);
+    padding: 10px;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-color);
+}
+
+/* --- LISTS --- */
+ol {
+    padding-left: 25px;
+}
+ol li {
+    margin-bottom: 10px;
+}
+
+/* --- TABLES DESIGN --- */
+table {
+    width: 100%;
+    border-collapse: separate; /* Allows for rounded corners on table */
+    border-spacing: 0;
+    margin: 15px 0 25px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border: 1px solid #e6e6e6;
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+table th {
+    background: var(--accent-color); /* Accent header */
+    color: var(--text-white);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Zebra striping for rows */
+table tbody tr:nth-child(even) {
+    background-color: rgba(200, 128, 64, 0.08); 
+}
+table tbody tr:hover {
+     background-color: rgba(200, 128, 64, 0.15); 
+}
+
+
+/* --- ABBREVIATION GRID --- */
+.abbr-grid {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+}
+
+.abbr-grid div {
+    background: var(--text-white);
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border: 1px solid rgba(200, 128, 64, 0.2);
+    font-size: 0.95rem;
+}
+.abbr-grid div strong {
+    color: var(--accent-color);
+    display: block;
+    margin-bottom: 4px;
+}
+
+
+/* --- IFRAME STYLING --- */
+#card2 iframe {
+    width: 100% !important;
+    height: 400px; /* Give it a fixed height so it doesn't collapse */
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+/* --- BACK TO TOP LINK --- */
+.top-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid var(--accent-color);
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.top-link:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+
+
+/* --- MEDIA QUERIES (RESPONSIVE DESIGN) --- */
+
+/* Tablet and up: Switch grid to 2 columns */
+@media (min-width: 900px) {
+    #card-container {
+        grid-template-columns: 2fr 1fr; /* Main content wider than sidebar */
+    }
     
-
-    body {
-        margin: 0;
-        font-family: "Segoe UI", Roboto, Arial, sans-serif;
-        background: white;
-        color: #222;
-        line-height: 1.5;
-        display: flex;
-        justify-content: center;
-        padding: 2px;
-    }
-
-    #container {
-        width: 96%;
-        justify-content: center;
-    }
-
-    #container header {
-        text-align: center;
-        margin-bottom: 18px;
-        color: white;
-        background-color: #C88040;
-    }
-
-    #card-container {
-        display: flex;
-        justify-content: center;
-        gap: 18px;
-        box-shadow: #222 0px 6px 3px rgba(20, 20, 30, 0.06);
-    }
-
-    #card-container {
-        display: grid;
-        gap: 18px;
-        grid-template-columns: 1fr;
-    }
-
-    @media(min-width:880px) {
-        #card-container {
-            grid-template-columns: 1fr 340px;
-        }
-    }
-
-    #card,
+    /* Sticky sidebar behavior for desktop */
     #card2 {
-        background: #F5F5F5;
-        border-radius: 10px;
-        box-shadow: 0 6px 3px rgba(20, 20, 30, 0.06);
+        position: sticky;
+        top: 120px; /* Clears the sticky header */
+    }
+}
+
+/* Mobile Styles (matching home page breakpoints) */
+@media only screen and (max-width: 768px) {
+    #logoPic {
+        width: 90px;
+    }
+
+    .menu {
+        height: auto;
+        padding: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .menu a {
+        font-size: 16px;
+        padding: 8px 12px;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    #card, #card2 {
         padding: 20px;
     }
 
-    h2 {
-        margin-top: 0;
-        color: #C88040;
-        font-size: 1.15rem;
-    }
-
-    h3 {
-        margin: 12px 0 6px;
-    }
-
-    p.lead {
-        color: #666666;
-        margin-top: 0;
-    }
-
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 8px 0 12px;
-    }
-
-    table th,
-    table td {
-        border: 1px solid #e6e6e6;
-        padding: 8px;
-        text-align: left;
-    }
-
-    table th {
-        background: #fafafa;
-    }
-
-    .abbr-grid {
-        display: grid;
-        gap: 12px;
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-
-    }
-    .abbr-grid div {
-        background: #EBDCCA;
-        padding: 10px;
-        border-radius: 6px;
+@media only screen and (max-width: 768px) {
+    footer {
         text-align: center;
+        display:flex;
+        background-color:#333;
+        color:white;
+        padding:20px;
+        padding-top: 0;
+        margin-top: 0;
+        flex-wrap:wrap;
+        align-items:flex-start;
+        justify-content: space-around;
+ height:unset;
     }
 
-    .small {
-        font-size: 0.92rem;
-        color: #999999;
+    #listFooter {
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px 0;
+       
     }
 
-    .top-link {
-        display: inline-block;
-        margin-top: 10px;
-        color: #C88040;
-        text-decoration: none;
+    #listFooter a {
+        font-size: 16px;
     }
-
-    .muted-note {
-        font-size: 0.95rem;
-        color: #999999;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    iframe {
-        border: none;
-        overflow: hidden;
-    }
+}
